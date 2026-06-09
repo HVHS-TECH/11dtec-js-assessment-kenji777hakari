@@ -1,14 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+<meta charset="UTF-8" />
+<title>Happy Birthday Daniel</title>
+<style>
+  :root {
+    color-scheme: dark;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at top, #1f1b33 0%, #0b0715 80%);
+    color: #f5f3ff;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+
+  .game-shell {
+    max-width: 520px;
+    width: 100%;
+    background: rgba(18, 11, 38, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .subtitle {
+    margin: 12px 0 24px;
+    text-align: center;
+    color: #b9b3f5;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .stat {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    padding: 14px 16px;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .stat span {
+    display: block;
+    margin-top: 6px;
+    font-size: 1.35rem;
+    color: #ff9bff;
+  }
+
+  .staircase {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+
+  .step {
+    position: relative;
+    min-height: 70px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a7a1ff;
+    font-size: 0.95rem;
+    transition: transform 180ms ease, background-color 180ms ease;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .step.completed {
+    background: linear-gradient(135deg, #9c6bff 0%, #ff6bf2 100%);
+    color: #0f0b1f;
+    transform: translateY(-4px);
+  }
+
+  .step .player {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.95rem;
+    line-height: 1.1;
+    background: rgba(255, 255, 255, 0.9);
+    color: #1c1448;
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  .step .player span {
+    display: block;
+    margin-top: 2px;
+  }
+
+  .controls {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+  }
+
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 999px;
+    padding: 14px 22px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    transition: transform 160ms ease, background 160ms ease;
+  }
+
+  #climb-button {
+    background: #8f6dff;
+  }
+
+  #phonk-button {
+    background: #ff6b9b;
+  }
+
+  #reset-button {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  button:hover {
+    transform: translateY(-1px);
+  }
+
+  .message {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 16px;
+    text-align: center;
+    color: #d3cfff;
+    min-height: 56px;
+  }
+</style>
 </head>
 <body>
+<div class="game-shell">
+  <h1>happy birthday daniel</h1>
+  <p class="subtitle">Subaru Natsuki climbs the sussy stairs, raising insanity as he races to the next level.</p>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+  <div class="stats">
+    <div class="stat">
+      Level
+      <span id="level">1</span>
+    </div>
+    <div class="stat">
+      Insanity
+      <span id="insanity">0</span>
+    </div>
+    <div class="stat">
+      Stairs
+      <span id="stair-count">0</span>/<span id="stairs-total">10</span>
+    </div>
+  </div>
 
-  
+  <div class="staircase" id="staircase"></div>
+
+  <div class="controls">
+    <button id="climb-button">Climb a Stair</button>
+    <button id="phonk-button">Play Phonk</button>
+    <button id="reset-button">Reset</button>
+  </div>
+
+  <div class="message" id="message">Press climb to start your ascent.</div>
+</div>
 <script src="script.js"></script>
 </body>
 </html>
