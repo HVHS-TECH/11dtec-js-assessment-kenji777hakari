@@ -1,8 +1,8 @@
  /*********************************************************
-variables
+variable
   **************************************************/
 
-var userName = prompt ()
+var userName = prompt ("what is your name?" , "Jayden")
 
 /**********************************************************
  MAIN CODE
@@ -11,7 +11,7 @@ var userName = prompt ()
  alert("Welcome Daniel to my first Javascript program!");
 
  alert("Welcome to my program");
- prompt('What is your name?');
+ prompt('Welcome to my program please enter your name?');
 
 
  
