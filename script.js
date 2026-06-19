@@ -9,13 +9,9 @@ var locations;
 /**********************************************************
  MAIN CODE
  ********************************************/
-
- alert("Welcome Daniel to my first Javascript program!");
-
- alert("Welcome to my program");
- userName = prompt('Welcome to my program please enter your name?');
+ userName = prompt("Welcome to my Triple T's Pizza Palza! please enter your name?");
 alert("your name is " + userName);
 
 age = prompt("Before continuing to Triple T's Pizza Palza please type in your age");
- locations = prompt("Before continuing futher");
-alert("Hi " + userName +  ", you are "+ age +". welcome to Triple T's Pizza Plaza.");
+ locations = prompt("Before continuing further please type in your location");
+alert("Hi " + userName +  ", you are "+ age +". You are currently at "+ locations +". welcome to Triple T's Pizza Plaza.");
