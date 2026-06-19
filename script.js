@@ -4,7 +4,7 @@ variable
 
 var userName;
 var age;
-var location;
+var locations;
 
 /**********************************************************
  MAIN CODE
@@ -17,4 +17,5 @@ var location;
 alert("your name is " + userName);
 
 age = prompt("Before continuing to Triple T's Pizza Palza please type in your age");
+ locations = prompt("Before continuing futher");
 alert("Hi " + userName +  ", you are "+ age +". welcome to Triple T's Pizza Plaza.");
