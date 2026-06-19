@@ -3,6 +3,7 @@ variable
   **************************************************/
 
 var userName;
+var age;
 
 /**********************************************************
  MAIN CODE
@@ -14,3 +15,5 @@ var userName;
  userName = prompt('Welcome to my program please enter your name?');
 alert("your name is " + userName);
 alert("Hi " + userName + " welcome to Triple T's Pizza Plaza");
+
+userN = prompt('Welcome to my program please enter your name?');
