@@ -4,6 +4,7 @@ variable
 
 var userName;
 var age;
+var location;
 
 /**********************************************************
  MAIN CODE
