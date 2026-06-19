@@ -15,5 +15,5 @@ var age;
  userName = prompt('Welcome to my program please enter your name?');
 alert("your name is " + userName);
 
-Age = prompt("Before continuing to Triple T's Pizza Palza please type in your age");
-alert("Hi " + userName +  ", you are "+ age +". welcome to Triple T's Pizza Plaza");
+age = prompt("Before continuing to Triple T's Pizza Palza please type in your age");
+alert("Hi " + userName +  ", you are "+ age +". welcome to Triple T's Pizza Plaza.");
