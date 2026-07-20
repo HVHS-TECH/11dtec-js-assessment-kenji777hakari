@@ -21,4 +21,4 @@ age = prompt("Before continuing to Triple T's Pizza Palza please type in your ag
  locations = prompt("Before continuing further please type in your location");
 alert("Hi " + userName +  ", you are "+ age +". You are currently at "+ locations +". welcome to Triple T's Pizza Plaza.");
 alert("What would you like to order?")
-food = prompt ("Menu: Cheesey Pizza, Sahur Pizza,  ")
+food = prompt ("Menu: Cheesey Pizza 1, Sahur Pizza 2, Tralalaro TralaTacos ")
