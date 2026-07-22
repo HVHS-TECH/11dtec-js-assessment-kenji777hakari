@@ -14,7 +14,7 @@ let food = ["Food 1","Food 2, Food 3"]
 /**********************************************************
  MAIN CODE
  ********************************************/
- userName = prompt("Welcome to Triple T's Pizza Palza! please enter your name?");
+ userName = prompt("Welcome to Tungs Tacos and Sahurs Salsas  please enter your name?");
 alert("your name is " + userName);
 
 age = prompt("Before continuing to Triple T's Pizza Palza please type in your age");
