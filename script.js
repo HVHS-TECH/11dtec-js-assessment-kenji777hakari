@@ -34,3 +34,6 @@ if (food == 1){
 if (food == 2){
   alert("this cost $8")
 }
+if (food == 3){
+  alert("this cost $10")
+}
