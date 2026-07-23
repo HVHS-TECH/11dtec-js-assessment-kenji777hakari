@@ -28,3 +28,9 @@ alert("Hi " + userName +  ", you are "+ age +". You are currently at "+ location
 alert("What would you like to order?")
 food = prompt ("Menu:" + Menu) 
 alert("you have ordered" + food );
+if (food == 1){
+  alert("this cost $5")
+}
+if (food == 2){
+  alert("this cost $8")
+}
