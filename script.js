@@ -27,7 +27,7 @@ age = prompt("Before continuing to Triple T's Pizza Palza please type in your ag
 alert("Hi " + userName +  ", you are "+ age +". You are currently at "+ locations +". welcome to Triple T's Pizza Plaza.");
 alert("What would you like to order?")
 food = prompt ("Menu:" + Menu) 
-alert("you have ordered" + food );
+alert("you have ordered" + food ); 
 if (food == 1){
   alert("this cost $5")
 }
